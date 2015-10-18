@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MainVC" customModule="ask_NuNu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ask NuNu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv2-IS-547">
+                                <rect key="frame" x="16" y="28" width="568" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nunu.png" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-To-oRg">
+                                <rect key="frame" x="138" y="104" width="325" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="IOv-i8-yjk"/>
+                                    <constraint firstAttribute="width" constant="325" id="glP-dy-Dqd"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiO-YW-dPZ">
+                                <rect key="frame" x="169" y="368" width="262" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="GSx-IQ-0jU"/>
+                                    <constraint firstAttribute="height" constant="131" id="R2h-Gy-23i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.99950678661616166" green="0.99950678661616166" blue="0.99950678661616166" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhM-dh-Ay5">
+                                <rect key="frame" x="-12" y="271" width="601" height="578"/>
+                                <state key="normal" image="paw-print.png">
+                                    <color key="titleColor" red="0.62563131313131315" green="0.075071833358386714" blue="0.3143062070813159" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAnswerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Z5-af-RWk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50738840126956608" blue="0.41103210350069053" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HhM-dh-Ay5" secondAttribute="bottom" constant="-249" id="6P1-wI-dlv"/>
+                            <constraint firstItem="HhM-dh-Ay5" firstAttribute="centerX" secondItem="oiO-YW-dPZ" secondAttribute="centerX" constant="-11.5" id="I8e-Jq-7jE"/>
+                            <constraint firstItem="tv2-IS-547" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="N5A-P4-ru5"/>
+                            <constraint firstAttribute="centerX" secondItem="HhM-dh-Ay5" secondAttribute="centerX" constant="11.5" id="XIl-hg-zN5"/>
+                            <constraint firstAttribute="centerY" secondItem="bO1-To-oRg" secondAttribute="centerY" constant="33.5" id="b3C-oN-Ybc"/>
+                            <constraint firstAttribute="centerY" secondItem="bO1-To-oRg" secondAttribute="centerY" constant="33.5" id="dXZ-Rz-E6N"/>
+                            <constraint firstAttribute="centerX" secondItem="bO1-To-oRg" secondAttribute="centerX" id="h0i-d6-hPP"/>
+                            <constraint firstAttribute="centerY" secondItem="oiO-YW-dPZ" secondAttribute="centerY" constant="-133.5" id="h6c-QS-aVs"/>
+                            <constraint firstItem="tv2-IS-547" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="nDx-Mm-ROY"/>
+                            <constraint firstAttribute="centerX" secondItem="bO1-To-oRg" secondAttribute="centerX" id="qOp-vL-6mR"/>
+                            <constraint firstItem="tv2-IS-547" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="s9U-Ce-epp"/>
+                            <constraint firstAttribute="centerX" secondItem="oiO-YW-dPZ" secondAttribute="centerX" id="th9-yJ-qu4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerText" destination="oiO-YW-dPZ" id="xv9-mD-Q1u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nunu.png" width="233" height="182"/>
+        <image name="paw-print.png" width="600" height="578"/>
+    </resources>
+</document>
